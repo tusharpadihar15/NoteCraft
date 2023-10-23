@@ -1,4 +1,6 @@
 const addbutton = document.querySelector("#addnote");
+const startnotetext=document.getElementById("startnote");
+count=0;
 
 const updateLSData = () => {
   const textAreaData = document.querySelectorAll("textarea");
@@ -23,6 +25,9 @@ const updateLSDataTitle = () => {
 };
 
 const addnewnotes = (title= "",text = "") => {
+  startnotetext.style.display="none";
+  count++;
+  
   const note = document.createElement("div");
   note.classList.add("note");
 
@@ -60,6 +65,12 @@ const addnewnotes = (title= "",text = "") => {
 
   // deleting the node
   delbutton.addEventListener("click", () => {
+    count--;
+    if(count==0)
+    {
+      console.log("aaya andar");
+      startnotetext.style.display="block";
+    }
     note.remove();
     updateLSData();
     updateLSDataTitle();
