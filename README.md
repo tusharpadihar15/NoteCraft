@@ -5,4 +5,4 @@ so with the help of this notes one can easily make notes so anytime someone wnat
 
 Here is a screenshot of the website:-
 
-NoteCraft.png
+https://github.com/tusharpadihar15/NoteCraft/blob/main/NoteCraft.png
