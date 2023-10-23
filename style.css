@@ -219,6 +219,16 @@ html {
     min-height: 100%;
 }
 
+.start{
+    color: darkgray;
+    margin: auto;
+    margin-top: 230px;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+    /* border: 2px solid red; */
+}
+
 footer {
     background-color: rgb(255, 230, 0);
     color: black;
@@ -242,7 +252,13 @@ footer {
     }
 
 }
+@media(max-width:500px){
+    #startnote{
+        margin-top: 100px;
+        font-size: 17px;
+    }
 
+}
 
 footer a{
     color: black;
